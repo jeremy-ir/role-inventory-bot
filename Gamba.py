@@ -138,7 +138,7 @@ class Gamba(commands.Cog):
 
         # save the timestamp for the cooldown and pickaxe state
         is_pickaxe_broken = (random.randrange(1, pickaxe_break_chance) == 1)
-        cooldowns[interaction.user.id] = {"last_roll": timestamp(), "pickaxe_state": is_pickaxe_broken]
+        cooldowns[interaction.user.id] = {"last_roll": timestamp(), "pickaxe_state": is_pickaxe_broken}
 
         # Create a pretty embed
         embed = discord.Embed(
